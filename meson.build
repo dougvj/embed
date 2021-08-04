@@ -1,3 +1,3 @@
 project('embed', 'c')
 
-executable('embed', ['embed.c'])
+exe = executable('embed', ['embed.c'])
