@@ -46,9 +46,9 @@ The tool is designed to be invokable multiple times to embed sets of files
 grouped logically. For example, in addition to embedding shaders one could also
 embed textures in a separate pass with a function name `get_texture_data`
 
-# Using with build tools
+## Using with build tools
 
-## Meson
+### Meson
 
 Meson makes it really easy to use `embed` in your build process.
 
@@ -82,11 +82,11 @@ Then include `embedded_files` in your list of sources for the final executable:
 executable('some_final_executable', [embedded_files] + sources, dependencies)
 ```
 
-## CMake, Make, etc
+### CMake, Make, etc
 
 Totally doable. Pull requests for examples, or anything else, are welcome
 
-# Why not just use `ld` or `xdd` to embed binary data?
+## Why not just use `ld` or `xdd` to embed binary data?
 
 Because writing my own tools from scratch is its own reward ;)
 
